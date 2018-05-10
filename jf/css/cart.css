@@ -1,0 +1,246 @@
+/*@media (max-width:360px) {
+
+}*/
+@font-face {
+    /* font-properties */
+    font-family: huakang;
+    src: url('../fonts/AUDITYPE-NORMAL.TTF')
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: black;
+
+    overflow: auto;
+
+    /*font-family: "华康黑体W5";*/
+    font-family: huakang;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+/*头部信息*/
+.content_header{
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+
+    clear: both;
+    height: 40pt;
+    background-color: black;
+}
+.content_header > div{
+    float: left;
+    height: 100%;
+}
+.content_header_left{
+    width:20%;
+}
+.content_header_left img{
+    height: 30%;
+    float: left;
+    margin-left: 30%;
+    margin-top: 20%;
+}
+.content_header_m{
+    width:60%;
+}
+.content_header_m img{
+    height: 45%;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.content_header_right{
+    width:20%;
+}
+.content_header_right img{
+    height: 45%;
+    float: right;
+    margin-right: 30%;
+    margin-top: 15%;
+}
+/*列表*/
+#cart_content{
+    letter-spacing:1pt;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+#cart_content{ background-image: url(../images/cart/fadongjiwanzhengtu.png); background-repeat: no-repeat; background-position: center 54px; background-size: 100% 100%; background-attachment: fixed; padding-bottom: 250px; }
+#cart_content .cart_item:first-child{
+    margin-top: 40pt;
+}
+.cart_item{
+    position: relative;
+    z-index: 5;
+    background-color: #161718;
+
+
+    width: 100%;
+    height: 100pt;
+    border-top: 1pt solid rgb(187, 10, 48);
+    border-bottom: 1pt solid rgb(187, 10, 48);
+    margin-top: 10pt;
+
+    clear: both;
+}
+.cart_item > div{
+    float: left;
+    height: 100%;
+    color: white;
+}
+.cart_item_left{
+    width: 10%;
+}
+.cart_item_end{
+    width: 100%;
+    height: 40pt;
+}
+
+/*圆*/
+.cart_item_left_circle {
+    width: 70%;
+    color: white;
+    /*background-color: rgb(187, 10, 48);*/
+    /*text-align: center;*/
+}
+.cart_item_left_circle img{
+    width: 100%;
+    height: 100%;
+}
+
+.cart_item_middle{
+    width: 75%;
+}
+.cart_item_middle_img{
+    float: left;
+    height: 65%;
+    margin-left: 10pt;
+}
+.cart_item_middle_img img {
+    width: 100%;
+    height: 100%;
+}
+.cart_item_middle_info {
+    float: left;
+    height: 100%;
+    width: 50%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    /*word-wrap: break-word;*/
+
+    margin-left: 20pt;
+}
+/*占位置*/
+.cart_item_middle_info_hr {
+    height: 22%;
+}
+.cart_item_middle_info_title{
+    display:inline;
+    font-size: 12pt;
+    color: white;
+    border-bottom: 1pt dashed rgb(187,10,48);
+    padding-bottom: 5pt;
+
+}
+.cart_item_middle_info_jifen{
+    font-size: 10pt;
+    color: rgb(187,10,48);
+    margin-top: 10pt;
+}
+/*右侧展示*/
+.cart_item_right{
+    width: 15%;
+}
+.cart_item_right > div{
+    text-align: center;
+}
+.cart_item_right_add{
+    height: 30%;
+}
+.cart_item_right_add img{
+    height: 50%;
+    margin-top: 10pt;
+}
+.cart_item_right_num{
+    color: white;
+    font-size: 12pt;
+    height: 40%;
+    vertical-align: middle;
+}
+.cart_item_right_sub{
+    height: 30%;
+}
+.cart_item_right_sub img{
+    height: 15%;
+    margin-top: 10pt;
+}
+
+/*底图*/
+#cart_back1{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+#cart_back1 img{
+    width: 100%;
+    height: 90%;
+}
+#cart_back2{
+    height: 200pt;
+}
+#cart_back2 img{
+    width: 70%;
+    margin-top: -65pt;
+}
+
+/*按钮*/
+#cart_sub{
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+
+    height: 52pt;
+    background-color:#161718;
+
+    color: white;
+    font-size: 13pt;
+    font-weight: 500;
+
+    clear: both;
+}
+.cart_sub_c{
+    width: 100%;
+    height: 68px;
+}
+.cart_sub_info{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.cart_sub_btn{
+    float: right;
+    width: 30%;
+    height: 60%;
+    background-color: rgb(187,10,48);
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 5%;
+}

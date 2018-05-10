@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/cart.css" type="text/css" />
+    <link rel="stylesheet" href="css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../css/mystyle.css" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/zepto-1.2.0.min.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/cart.js?v=2"></script>
+    <script type="text/javascript" src="../js/myjs.js"></script>
+    <script type="text/javascript" src="../layer_mobile/layer.js"></script>
+
+    <script type="text/javascript" src="../wui/js/wui.js"></script>
+</head>
+<body>
+
+<div class="page page-cart">
+
+    <header class="page-header fixed">
+        <img class="icon-menu" src="../images/icon-nav.png" alt="菜单">
+        <img class="logo" src="../images/logo.png" alt="奥迪logo">
+        <img class="icon-email" src="../images/icon-email.png" alt="规则" onclick="guizeModal()">
+    </header>
+
+    <div id="cart_content">
+        <!--一条记录-->
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="1">
+                    <img src="images/cart/xuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="../images/ex-news3.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">新年礼物福袋</div>
+                    <div class="cart_item_middle_info_jifen" data-v="6999">6,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+            <div class="cart_delete">
+                <span class="btn-delete">删除</span>
+            </div>
+        </div>
+
+        <!--一条记录-->
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="0">
+                    <img src="images/cart/weixuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="images/cart/item1.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">Audi on Demon+ 出行礼包</div>
+                    <div class="cart_item_middle_info_jifen" data-v="9999">9,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+            <div class="cart_delete">
+                <span class="btn-delete">删除</span>
+            </div>
+        </div>
+
+
+        <!--=============================================================-->
+
+        <!--一条记录-->
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="1">
+                    <img src="images/cart/xuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="images/cart/item2.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">新年礼物福袋</div>
+                    <div class="cart_item_middle_info_jifen" data-v="6999">6,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+            <div class="cart_delete">
+                <span class="btn-delete">删除</span>
+            </div>
+        </div>
+
+        <!--一条记录-->
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="0">
+                    <img src="images/cart/weixuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="images/cart/item1.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">Audi on Demon+ 出行礼包</div>
+                    <div class="cart_item_middle_info_jifen" data-v="9999">9,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+            <div class="cart_delete">
+                <span class="btn-delete">删除</span>
+            </div>
+        </div><!--一条记录-->
+
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="1">
+                    <img src="images/cart/xuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="images/cart/item2.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">新年礼物福袋</div>
+                    <div class="cart_item_middle_info_jifen" data-v="6999">6,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+            <div class="cart_delete">
+                <span class="btn-delete">删除</span>
+            </div>
+        </div>
+
+        <!--一条记录-->
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="0">
+                    <img src="images/cart/weixuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="images/cart/item1.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">Audi on Demon+ 出行礼包</div>
+                    <div class="cart_item_middle_info_jifen" data-v="9999">9,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+        </div><!--一条记录-->
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="1">
+                    <img src="images/cart/xuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="images/cart/item2.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">新年礼物福袋</div>
+                    <div class="cart_item_middle_info_jifen" data-v="6999">6,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+        </div>
+
+        <!--一条记录-->
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="0">
+                    <img src="images/cart/weixuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="images/cart/item1.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">Audi on Demon+ 出行礼包</div>
+                    <div class="cart_item_middle_info_jifen" data-v="9999">9,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+        </div><!--一条记录-->
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="1">
+                    <img src="images/cart/xuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="images/cart/item2.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">新年礼物福袋</div>
+                    <div class="cart_item_middle_info_jifen" data-v="6999">6,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+        </div>
+
+        <!--一条记录-->
+        <div class="cart_item">
+            <div class="cart_item_left">
+                <div class="cart_item_left_circle" data-s="0">
+                    <img src="images/cart/weixuanzhong.png">
+                </div>
+            </div>
+            <div class="cart_item_middle">
+                <div class="cart_item_middle_img">
+                    <img src="images/cart/item1.png">
+                </div>
+                <div class="cart_item_middle_info">
+                    <div class="cart_item_middle_info_hr"></div>
+                    <div class="cart_item_middle_info_title">Audi on Demon+ 出行礼包</div>
+                    <div class="cart_item_middle_info_jifen" data-v="9999">9,999积分</div>
+                </div>
+            </div>
+            <div class="cart_item_right">
+                <div class="cart_item_right_add">
+                    <img src="images/cart/add.png">
+                </div>
+                <div class="cart_item_right_num">1</div>
+                <div class="cart_item_right_sub">
+                    <img src="images/cart/sub.png">
+                </div>
+            </div>
+        </div>
+        <!--=========================================================================================-->
+
+        <!--底图 跟着最后一个商品-->
+<!--        <div id="cart_back2">
+            <img />
+        </div>-->
+
+        <!--底图-->
+<!--        <div id="cart_back1">
+            <img src="images/cart/fadongjiwanzhengtu.png">
+        </div>-->
+
+<!--        <div class="cart_item_end">
+        </div>-->
+
+    </div>
+
+
+    <!--按钮-->
+    <div id="cart_sub">
+        <div class="cart_sub_c">
+            <div class="cart_sub_info">
+                总计: 16,998积分
+            </div>
+            <div class="cart_sub_btn" id="target-duihuan-modal">
+                确认兑换
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- start 导航菜单 -->
+<div class="page page-nav">
+    <i class="shadow"></i>
+    <div class="cont-logo"><img src="../images/logo.png"></div>
+    <div class="cont-nav">
+        <ul>
+            <li><a href="index.html"><span class="icon"><img src="images/icon-home.png"></span>首页</a></li>
+            <li><a href="brand.html"><span class="icon"><img src="images/icon-brand.png"></span>品牌</a></li>
+            <li><a href="news.html"><span class="icon"><img src="images/icon-news.png"></span>新闻</a></li>
+            <li><a href="imagery.html"><span class="icon"><img src="images/icon-imagery.png"></span>影像</a></li>
+            <li><a href="live.html"><span class="icon"><img src="images/icon-feature.png"></span>专题</a></li>
+            <li><a href="fillInfo.html"><span class="icon"><img src="images/icon-event.png"></span>活动</a></li>
+            <li><a href="message.html"><span class="icon"><img src="images/icon-messages.png"></span>留言</a></li>
+        </ul>
+    </div>
+    <div class="cont-user clearfix">
+        <span class="icon"><img src="images/icon-user.png" alt="用户头像"></span>
+        <span class="username">Enson Hu</span>
+    </div>
+</div>
+<!-- end 导航菜单 -->
+
+<!-- 弹窗-填写领奖地址 -->
+<div class="myModal duihuanModal" id="duihuanModal">
+    <i class="shadow"></i>
+    <div class="mycontainer">
+        <i class="close"></i>
+        <div class="bodyer">
+            <ul class="cont">
+                <li>
+                    <dl class="clearfix">
+                        <dt class="icon"><img src="../images/icon-username.png"></dt>
+                        <dd class="fill"><input class="input" type="text" placeholder="请填写您的真实姓名" value="张三"></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="clearfix">
+                        <dt class="icon"><img src="../images/icon-phone.png"></dt>
+                        <dd class="fill"><input class="input" type="text" placeholder="请填写您的真实手机号" value="182 1111 1111"></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="clearfix">
+                        <dt class="icon"><img src="../images/icon-email1.png"></dt>
+                        <dd class="fill"><input class="input" type="text" placeholder="请填写您的电子邮件地址"></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="clearfix">
+                        <dt class="icon"><img src="../images/icon-address.png"></dt>
+                        <dd class="fill"><input class="input" type="text" placeholder="请填写您的收件地址（用于奖品快递）"></dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="btns"><a class="btn" id="submitBtn">确认提交</a></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 弹窗-兑奖成功 -->
+<div class="myModal msgModal" id="msgModal">
+    <i class="shadow"></i>
+    <div class="mycontainer">
+        <i class="close"></i>
+        <div class="bodyer">
+            <h3>兑奖成功</h3>
+            <span>我们将尽快为您安排递送</span>
+        </div>
+    </div>
+</div>
+
+<!-- 弹窗-规则 -->
+<div class="myModal cdlModal" id="cdlModal">
+    <i class="shadow"></i>
+    <div class="mycontainer">
+        <i class="close"></i>
+        <div class="bodyer">
+            <header class="b-title">
+                <h3>“阅”享积动力</h3>
+                <h4>传动值累计及使用规则说明</h4>
+            </header>
+
+            <div class="b-cont">
+                <h3>关于“传动力”</h3>
+                <ul>
+                    <li>“传动值”是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为</li>
+                </ul>
+                <h3>如何获得“传动值”</h3>
+                <ul style="padding-left: 16px;">
+                    <li><i class="des">1.</i>是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为是专为</li>
+                    <li><i class="des">2.</i>是专为是专为是专为是专为是专为是专为是专</li>
+                    <li><i class="des">3.</i>是专为是专为是专为是专为是专为是专</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var moveX = 0;
+        var touchXArray = [];
+        var touchYArray = [];
+        var istouchend = false;
+        var startX = 0;
+        var startleft = 0;
+        var targets = document.querySelectorAll('.cart_item');
+        //console.log(targets);
+        for(let i=0;i<targets.length;i++){
+            var target = targets[i];
+            target.ontouchstart = function (event) {
+                startX =  event.touches[0].clientX;
+                startleft = parseFloat($(this).css('left').replace(/px/gi, ''));
+                touchXArray.length = 0;
+                touchXArray.push(startX);
+            }
+            target.ontouchmove = function (event) {
+                var clientX = event.touches[0].clientX;
+                var left = clientX - startX + startleft;
+                $(this).css({left: left});
+            }
+            target.ontouchend = function (event) {
+                var endleft = $(this).offset().left;
+                if (-endleft > 100) {
+                    $(this).animate({left: '-100px'});
+                } else {
+                    $(this).animate({left: '0px'});
+                }
+            }
+            target.ontouchcancel = function (event) {
+                var endleft = $(this).offset().left;
+                if (-endleft > 100) {
+                    $(this).animate({left: '-100px'});
+                } else {
+                    $(this).animate({left: '0px'});
+                }
+            }
+        }
+
+    });
+
+    $(function () {
+        $('.cart_delete').on('click',function (event) {
+            var $this = $(this);
+            layer.open({
+                content: '您确定要删除此商品吗？'
+                ,btn: ['删除', '不要']
+                ,yes: function(index){
+                    $this.closest('.cart_item').remove();
+                    layer.closeAll();
+                }
+            });
+            event.stopPropagation();
+        });
+    });
+
+    $(function () {
+        //弹窗填写收货人信息
+        $('#target-duihuan-modal').on('click', function () {
+            $('#duihuanModal').addClass('show');
+        });
+        //弹窗兑奖成功
+        $('#submitBtn').on('click', function () {
+            $('#msgModal').addClass('show');
+            $('#duihuanModal').removeClass('show');
+        });
+    });
+
+    //弹窗规则
+    function guizeModal() {
+        $('#cdlModal').addClass('show');
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+#nav{
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+}
+.nav_back{
+    position: absolute;
+    z-index: 7;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.nav_back img{
+    width: 100%;
+}
+.nav_content{
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.nav_content > div{
+    width: 100%;
+}
+/*头部*/
+.nav_content_top{
+    clear: both;
+}
+.nav_content_top > div{
+    float: left;
+}
+.nav_content_top img{
+    height: 100%;
+    float: left;
+}
+/*内容*/
+.nav_content_mid_hr{
+}
+.nav_content_mid{
+    clear: both;
+}
+.nav_content_mid > div{
+    float: left;
+}
+.nav_content_mid_c{
+    /*background-color: red;*/
+}
+.nav_content_mid_item{
+    font-weight: normal;
+    color: white;
+    letter-spacing:1pt;
+    font-weight: bold;
+}
+.nav_content_mid_item > div{
+    float: left;
+    height: 100%;
+}
+.nav_content_mid_item_img img{
+    height: 100%;
+}
+.nav_content_mid_item_img_word{
+
+}
+
+/*底部*/
+.nav_content_bottom_hr{
+    width: 100%;
+}
+.nav_content_bottom{
+    width: 100%;
+    clear: both;
+    color: white;
+    letter-spacing:1pt;
+    font-weight: bold;
+}
+
+.nav_content_bottom > div{
+    float: left;
+    height: 100%;
+    /*background-color: #00A6BB;*/
+}
+.nav_content_bottom_content_img img{
+    height: 100%;
+}

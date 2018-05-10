@@ -1,0 +1,163 @@
+/*@media (max-width:360px) {
+
+}*/
+@font-face {
+    /* font-properties */
+    font-family: huakang;
+    src: url('../fonts/AUDITYPE-NORMAL.TTF')
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: black;
+
+    font-family: huakang;
+
+}
+
+/*头部信息*/
+.content_header{
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+
+    clear: both;
+    height: 40pt;
+    background-color: black;
+}
+.content_header > div{
+    float: left;
+    height: 100%;
+}
+.content_header_left{
+    width:20%;
+}
+.content_header_left img{
+    height: 30%;
+    float: left;
+    margin-left: 30%;
+    margin-top: 20%;
+}
+.content_header_m{
+    width:60%;
+}
+.content_header_m img{
+    height: 45%;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.content_header_right{
+    width:20%;
+}
+.content_header_right img{
+    height: 45%;
+    float: right;
+    margin-right: 30%;
+    margin-top: 15%;
+}
+
+#details_content {
+    letter-spacing: 1pt;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    color: white;
+}
+.details_top{
+    width: 100%;
+    height: 8pt;
+}
+/*图片展示*/
+.details_img {
+    width: 100%;
+}
+.details_img_di {
+    border: 1pt solid rgb(187, 10, 48);
+}
+/*文字间距*/
+.details_img_di_word{
+    color: rgb(187,10,48);
+}
+.details_img_di_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*简介*/
+.details_center{
+    width: 90%;
+    word-wrap: break-word;
+
+/*    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap*/
+}
+.details_center1{
+    width: 100%;
+}
+.details_center_title{
+    display:inline;
+    color: white;
+    border-bottom: 1pt dashed rgb(187,10,48);
+    padding-bottom: 5pt;
+}
+.details_center_jifen{
+    font-size: 9pt;
+    color: rgb(187,10,48);
+}
+.details_center_info1{
+    color: white;
+}
+.details_center_info1 div{
+    margin-top: 5pt;
+}
+.details_center_info2{
+    color: white;
+}
+.details_content_end{
+    width: 100%;
+}
+
+/*简介底图*/
+#details_back{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+#details_back img{
+    width: 100%;
+    height: 100%;
+}
+
+/*按钮*/
+
+/*按钮*/
+#details_btn{
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 6;
+    bottom: 0;
+    left: 0;
+    background-color:black;
+    color: white;
+    font-weight: 500;
+    letter-spacing:1pt;
+
+    clear: both;
+}
+.details_btn1{
+    float: left;
+    text-align: center;
+    border: 1px solid white;
+}
+.details_btn2{
+    float: right;
+    background-color: rgb(187,10,48);
+    text-align: center;
+}

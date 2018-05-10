@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>礼物详情</title>
+    <link rel="stylesheet" href="css/details.css" type="text/css"/>
+    <link rel="stylesheet" href="css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../css/mystyle.css" type="text/css" />
+    <script type="text/javascript" src="js/zepto-1.2.0.min.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/details.js"></script>
+    <script type="text/javascript" src="../js/myjs.js"></script>
+</head>
+<body>
+
+<div class="page ">
+
+    <header class="page-header fixed">
+        <img class="icon-menu" src="../images/icon-nav.png" alt="菜单">
+        <img class="logo" src="../images/logo.png" alt="奥迪logo">
+        <img class="icon-email" src="../images/icon-email.png" alt="发送电子邮箱" onclick="seedEmail('4646@163.com')">
+    </header>
+
+    <div id="details_content">
+        <div class="details_img">
+            <div class="details_img_di">
+                <div class="details_img_di_word">
+                    NO.1
+                </div>
+                <div class="details_img_di_img">
+                    <img src="images/details/details_1.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="details_center">
+            <div class="details_center1">
+                <div class="details_center_title">新年礼物福袋</div>
+                <div class="details_center_jifen">6,999积分</div>
+            </div>
+            <div class="details_center_info1">
+                <div>奥迪中国特别定制新年福袋</div>
+                <div class="details_center_info11">福袋价值约1,000元,礼品随机搭配</div>
+            </div>
+            <div class="details_center_info2">
+                此福袋将通过快递送达您手中。请务必在兑换时确认您的收件地址及联系方式
+            </div>
+
+        </div>
+
+        <div class="details_content_end"></div>
+    </div>
+
+    <!--底图-->
+    <div id="details_back">
+        <img src="images/details/bg.png">
+    </div>
+
+    <!--按钮-->
+    <div id="details_btn">
+        <div class="details_btn1">加入兑换袋</div>
+        <div class="details_btn2">立即兑换</div>
+    </div>
+
+</div>
+
+<!-- start 导航菜单 -->
+<div class="page page-nav">
+    <i class="shadow"></i>
+    <div class="cont-logo"><img src="../images/logo.png"></div>
+    <div class="cont-nav">
+        <ul>
+            <li><a href="index.html"><span class="icon"><img src="images/icon-home.png"></span>首页</a></li>
+            <li><a href="brand.html"><span class="icon"><img src="images/icon-brand.png"></span>品牌</a></li>
+            <li><a href="news.html"><span class="icon"><img src="images/icon-news.png"></span>新闻</a></li>
+            <li><a href="imagery.html"><span class="icon"><img src="images/icon-imagery.png"></span>影像</a></li>
+            <li><a href="live.html"><span class="icon"><img src="images/icon-feature.png"></span>专题</a></li>
+            <li><a href="fillInfo.html"><span class="icon"><img src="images/icon-event.png"></span>活动</a></li>
+            <li><a href="message.html"><span class="icon"><img src="images/icon-messages.png"></span>留言</a></li>
+        </ul>
+    </div>
+    <div class="cont-user clearfix">
+        <span class="icon"><img src="images/icon-user.png" alt="用户头像"></span>
+        <span class="username">Enson Hu</span>
+    </div>
+</div>
+<!-- end 导航菜单 -->
+
+<style>
+    .details_img_di_img:before{ content: ""; display: inline-block; width: 0; height: 100%; margin-left: -5px; vertical-align: middle; }
+    .details_img_di_img img{ display: inline-block; width: 100%; height: auto; max-height: 100%; vertical-align: middle; margin-right: -1px; }
+    .details_img_di_img{ padding: 5px 0; }
+</style>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html class="scroll">
+<head lang="en">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>奥迪中国新闻中心</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+</head>
+<body>
+
+<div class="page page-fillInfo page-register">
+    <header class="page-header">
+        <img class="icon-menu" src="images/icon-nav.png" alt="菜单">
+        <img class="logo" src="images/logo.png" alt="奥迪logo">
+        <dl class="dropSelect">
+            <dt class="drop-btn"><span class="text"><i class="color">更新</i>个人信息</span><i class="icon-down"></i></dt>
+            <dd class="drop-menu">
+                <a class="menu" href="#">认证1</a>
+                <a class="menu" href="#">认证2</a>
+                <a class="menu" href="#">认证3</a>
+            </dd>
+        </dl>
+    </header>
+
+    <div class="page-body">
+        <ul class="cont">
+            <li>
+                <dl class="dl-sf clearfix">
+                    <dt class="icon"><img src="images/icon-media.png"></dt>
+                    <dd class="fill fill-sf"><input class="input" type="text" name="showSchool" readonly id="schoolInput" placeholder="请选择您的身份" value="媒体">
+                </dl>
+            </li>
+            <li>
+                <dl class="clearfix">
+                    <dt class="icon"><img src="images/icon-username.png"></dt>
+                    <dd class="fill"><input class="input" type="text" placeholder="请填写您的真实姓名" value="安德鲁大师"></dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="clearfix">
+                    <dt class="icon"><img src="images/icon-jigou.png"></dt>
+                    <dd class="fill"><input class="input" type="text" placeholder="请填写您所在的媒体/机构名称" value="中国日报"></dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="clearfix">
+                    <dt class="icon"><img src="images/icon-phone.png"></dt>
+                    <dd class="fill"><input class="input" type="text" placeholder="请填写您的真实手机号" value="182 1111 1111"></dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="clearfix">
+                    <dt class="icon"><img src="images/icon-email1.png"></dt>
+                    <dd class="fill"><input class="input" type="text" placeholder="请填写您的电子邮件地址" value="AndroidMaster@chinadaily.com"></dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="clearfix">
+                    <dt class="icon"><img src="images/icon-address.png"></dt>
+                    <dd class="fill"><input class="input" type="text" placeholder="选填：请填写您的收件地址（用于资料及奖品快递）" value="北京市朝阳区光华路5号世纪财富中心西楼12层"></dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="btns"><a class="btn" id="submitBtn" href="#">确认提交</a><a class="btn" href="javascript:window.history.back();">关闭返回</a></div>
+        <div class="info">
+            <p>请检查并核对您的个人信息。我们将按照您提交的信息，为您提供资料发送，活动邀请等服务。</p>
+            <p>如您遇到任何问题，请您通过微信消息直接与我们联系，我们会尽快为您处理并反馈。</p>
+        </div>
+        <div class="copyright">隐私权/版权&nbsp;&nbsp;&nbsp;&nbsp;© 奥迪中国 版权所有</div>
+    </div>
+
+</div>
+
+<!-- start 导航菜单 -->
+<div class="page page-nav">
+    <i class="shadow"></i>
+    <div class="cont-logo"><img src="images/logo.png"></div>
+    <div class="cont-nav">
+        <ul>
+            <li><a href="index.html"><span class="icon"><img src="images/icon-home.png"></span>首页</a></li>
+            <li><a href="brand.html"><span class="icon"><img src="images/icon-brand.png"></span>品牌</a></li>
+            <li><a href="news.html"><span class="icon"><img src="images/icon-news.png"></span>新闻</a></li>
+            <li><a href="imagery.html"><span class="icon"><img src="images/icon-imagery.png"></span>影像</a></li>
+            <li><a href="live.html"><span class="icon"><img src="images/icon-feature.png"></span>专题</a></li>
+            <li><a href="fillInfo.html"><span class="icon"><img src="images/icon-event.png"></span>活动</a></li>
+            <li><a href="message.html"><span class="icon"><img src="images/icon-messages.png"></span>留言</a></li>
+        </ul>
+    </div>
+    <div class="cont-user clearfix">
+        <span class="icon"><img src="images/icon-user.png" alt="用户头像"></span>
+        <span class="username">Enson Hu</span>
+    </div>
+</div>
+<!-- end 导航菜单 -->
+
+<div class="myModal" id="sureSubmitModal">
+    <i class="shadow"></i>
+    <div class="mycontainer">
+        <i class="close"></i>
+        <div class="bodyer">
+            <h3>您的信息已经提交</h3>
+            <span>我们将尽快处理您的修改申请</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<link rel="stylesheet" href="iosSelect/iosSelect.css">
+<script src="iosSelect/iosSelect.js"></script>
+<script>
+    $(function(){
+
+        $('#submitBtn').on('click',function(){
+            $('#sureSubmitModal').addClass('show');
+        });
+
+        var schoolData = [
+            {'id': '10001', 'value': '媒体'},
+            {'id': '10002', 'value': '机构'},
+        ];
+        var schoolInput = document.querySelector('#schoolInput');
+        schoolInput.addEventListener('click', function () {
+            var bankSelect = new IosSelect(1,
+                    [schoolData],
+                    {
+                        container: '.container',
+                        title: '请选择您的身份',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        showAnimate:true,
+                        callback: function (selectOneObj) {
+                            $('#schoolInput').val(selectOneObj.value);
+                        }
+                    });
+        });
+    });
+</script>
+</body>
+</html>

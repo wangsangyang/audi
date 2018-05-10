@@ -1,0 +1,67 @@
+/*@media (max-width:360px) {
+
+}*/
+@font-face {
+    /* font-properties */
+    font-family: huakang;
+    src: url('../fonts/AUDITYPE-NORMAL.TTF')
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*background-color: black;*/
+
+    overflow: auto;
+
+    /*font-family: "华康黑体W5";*/
+    font-family: huakang;
+}
+
+#cart2_content img{
+    width: 100%;
+    height: 100%;
+}
+
+/*背景*/
+#cart2_back{
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top:0;
+
+    background-color: rgba(0,0,0,0.2);
+}
+.cart2_back_info {
+    width: 100%;
+    height: 50pt;
+}
+.cart2_back_info img{
+    height: 60%;
+}
+
+.cart2_back_1{
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top:0;
+
+    background-color: black;
+    opacity: 0.7;
+}
+
+/*数值*/
+.cart2_back_info_w{
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top:0;
+    color: rgb(187, 10, 48);
+}
+.cart2_back_info_w_c{
+    opacity: 0;
+}
+.cart2_back_info_w_1{
+    font-weight: bold;
+}

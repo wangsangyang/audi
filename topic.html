@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html class="scroll">
+<head lang="en">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>专题</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/mystyle1.css" />
+</head>
+<body>
+
+<div class="page page-topic">
+    <header class="page-header">
+        <img class="icon-menu" src="images/icon-nav.png" alt="菜单">
+        <img class="logo" src="images/logo.png" alt="奥迪logo">
+        <img class="icon-search" src="images/icon-search.png" alt="搜索">
+        <div class="searchbox">
+            <i class="iconclose"></i>
+            <div class="search-cont">
+                <span class="tips">开始搜索</span>
+                <dl class="list">
+                    <dt class="search-input"><input id="search" type="text" placeholder="请输入关键字"></dt>
+                    <dd class="search-btn"></dd>
+                </dl>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-body">
+        <div class="con-condition">
+            <dl class="dropSelect" id="carShowSelect">
+                <dt class="drop-btn"><span class="text">人物访谈</span><i class="icon-down"></i></dt>
+                <dd class="drop-menu">
+                    <a class="menu">人物访谈1</a>
+                    <a class="menu">人物访谈2</a>
+                    <a class="menu">人物访谈3</a>
+                </dd>
+            </dl>
+            <dl class="dropSelect">
+                <dt class="drop-btn"><span class="text">2017</span><i class="icon-down"></i></dt>
+                <dd class="drop-menu">
+                    <a class="menu" href="#">2016</a>
+                    <a class="menu" href="#">2015</a>
+                </dd>
+            </dl>
+
+            <div class="moreSelect" id="moreSelect">
+                <dl class="more-header">
+                    <dt class="more-btn"><span class="text">更多筛选条件</span><i class="icon-down"></i></dt>
+                </dl>
+                <div class="more-body">
+                    <div class="item">
+                        <dl class="list">
+                            <dt class="drop-btn"><span class="text">请选择活动名称</span><i class="icon-down"></i></dt>
+                            <dd class="drop-menu">
+                                <a class="menu" href="#">上海活动</a>
+                                <a class="menu" href="#">北京活动</a>
+                            </dd>
+                        </dl>
+                        <dl class="list">
+                            <dt class="drop-btn"><span class="text">请选择素材类型</span><i class="icon-down"></i></dt>
+                            <dd class="drop-menu">
+                                <a class="menu" href="#">视频类型</a>
+                                <a class="menu" href="#">图片类型</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <i class="shadow"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="listbox">
+            <div class="swiper-container" id="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="topic-detail.html">
+                        <div class="img"><img src="images/ex41.png" alt="banner图"></div>
+                        <div class="text"><span>We invited our top scientist to talk about Audi's innovative DN</span></div>
+                    </a></li>
+                    <li class="swiper-slide"><a href="topic-detail.html">
+                        <div class="img"><img src="images/ex25.png" alt="banner图"></div>
+                        <div class="text">奥迪影像</div>
+                    </a></li>
+                    <li class="swiper-slide"><a href="topic-detail.html">
+                        <div class="img"><img src="images/banner3.png" alt="banner图"></div>
+                        <div class="text">奥迪活动</div>
+                    </a></li>
+                </ul>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div class="cont-arrow"><i class="arrow"></i></div>
+
+    </div>
+
+</div>
+
+<!-- start 导航菜单 -->
+<div class="page page-nav">
+    <i class="shadow"></i>
+    <div class="cont-logo"><img src="images/logo.png"></div>
+    <div class="cont-nav">
+        <ul>
+            <li><a href="index.html"><span class="icon"><img src="images/icon-home.png"></span>首页</a></li>
+            <li><a href="brand.html"><span class="icon"><img src="images/icon-brand.png"></span>品牌</a></li>
+            <li><a href="news.html"><span class="icon"><img src="images/icon-news.png"></span>新闻</a></li>
+            <li><a href="imagery.html"><span class="icon"><img src="images/icon-imagery.png"></span>影像</a></li>
+            <li><a href="live.html"><span class="icon"><img src="images/icon-feature.png"></span>专题</a></li>
+            <li><a href="fillInfo.html"><span class="icon"><img src="images/icon-event.png"></span>活动</a></li>
+            <li><a href="message.html"><span class="icon"><img src="images/icon-messages.png"></span>留言</a></li>
+        </ul>
+    </div>
+    <div class="cont-user clearfix">
+        <span class="icon"><img src="images/icon-user.png" alt="用户头像"></span>
+        <span class="username">Enson Hu</span>
+    </div>
+</div>
+<!-- end 导航菜单 -->
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+<script type="text/javascript" src="js/swiper.min.js"></script>
+
+<script>
+    $(function(){
+        var mySwiper = new Swiper ('#swiper-container', {
+            direction : 'vertical',
+            observer:true,
+            onInit: function(swiper){
+                swiper.slideTo(1, 1000, false);
+            },
+            onSlideChangeEnd: function(swiper){
+                var slide_length = mySwiper.slides.length;
+                var activeIndex = mySwiper.activeIndex;
+                if(activeIndex+1>=slide_length){
+                    $('.cont-arrow').hide();
+                }else{
+                    $('.cont-arrow').show();
+                }
+            },
+        });
+    });
+
+    $(function(){
+        /*更多筛选条件*/
+        $('#moreSelect .more-header').on('click',function(){
+            var $this = $(this);
+            var $morebody = $this.closest('#moreSelect').find('.more-body');
+            var isOpen = $morebody.hasClass('show');
+            $morebody[isOpen?'removeClass':'addClass']('show');
+            $('.page')[isOpen?'removeClass':'addClass']('overflow');
+        });
+        $('#moreSelect').on('click', '.list .drop-btn', function(){
+            var $this = $(this);
+            var $list = $this.closest('.list');
+            var isOpen = $list.hasClass('open');
+            $list.find('.drop-menu')[isOpen?'slideUp':'slideDown']();
+            $list[isOpen?'removeClass':'addClass']('open');
+        });
+        $('#moreSelect .more-body .shadow').on('click',function(){
+            var $this = $(this);
+            var $morebody = $this.closest('#moreSelect').find('.more-body');
+            $morebody.removeClass('show');
+            $('.page').removeClass('overflow');
+        });
+    });
+</script>
+
+</body>
+</html>

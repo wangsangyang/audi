@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*法律声明*/
+.page-law{ color: #fff; padding-top: 54px; }
+.page-law .page-header{ position: fixed; z-index: 4; }
+.page-law .page-body{ padding: 0px 18px 20px; }
+.page-law .page-body h1{ font-size: 18px; font-weight: bold; padding: 15px 0px 10px; }
+.page-law .page-body h2{ font-size: 16px; font-weight: bold; padding: 8px 0px; }
+.page-law .page-body .p{ font-size: 14px; padding: 5px 0px; }
+.page-law .page-body .li{ position: relative; padding: 0px 0px 0px 18px; margin-left: 2em; }
+.page-law .page-body .li:before{ content: ""; display: block; clear: both; width: 5px; height: 5px; border-radius: 50%; background-color: #fff; position: absolute; left: 2px; top: 7px; }
+.page-law .page-body .p1{ margin-left: 2em; }
+
+/*专题页*/
+.page-topic{ padding-top: 54px; min-height: inherit; height: 100%; }
+.page-topic .page-header{ position: fixed; z-index: 4;}
+.page-topic .page-body{ height: 100%; padding: 45px 18px 70px; position: relative; }
+
+.page-topic .page-body .con-condition{ position: absolute; top: 10px; left: 0px; width: 100%; height: 35px; padding: 0px 18px; }
+.page-topic .page-body .con-condition .dropSelect .drop-btn{ font-size: 14px; }
+.page-topic .page-body .page-body .con-condition .dropSelect .icon-down{ margin: 4px 0 0 8px; }
+.page-topic .page-body .page-body .con-condition .dropSelect .drop-menu { background-image: none; }
+.page-topic .page-body .page-body .con-condition .dropSelect .drop-menu .menu{ padding: 8px 18px; font-size: 14px; }
+
+.page-topic .page-body .listbox{ height: 100%; }
+.page-topic .page-body .swiper-container{ height: 100%; border-radius: 6px; overflow: hidden }
+.page-topic .page-body .swiper-button-prev{ display: none; }
+.page-topic .page-body .swiper-button-next{ display: none; }
+.page-topic .page-body .swiper-slide{ border-radius: 6px; overflow: hidden }
+.page-topic .page-body .swiper-slide img{ width: 100%; height: 100%; display: block; }
+.page-topic .page-body .swiper-slide .img{ height: 80%; overflow: hidden; position: relative; z-index: 2; box-shadow: 0px 3px 6px #999; }
+.page-topic .page-body .swiper-slide .text{ display: inline-block; width: 100%; height: 20%; color: #7f8187; font-size: 12px; padding: 0px 40px 0px 20px; background: #fff url(../images/icon-arrow-double.png) no-repeat 95% center; background-size: 16px auto; animation: arrow-move5 1s ease-in-out infinite;}
+.page-topic .page-body .swiper-slide a:hover .text, .page-topic .page-body .swiper-slide a:hover .text{ animation: arrow-move5 1s ease-in-out infinite; }
+@keyframes arrow-move5{
+    0%{ background-position: 95% center; }
+    51%{ background-position: 92% center; }
+    100%{ background-position: 95% center; }
+}
+.page-topic .page-body .swiper-slide .text span{ display: inline-block; vertical-align: middle; }
+.page-topic .page-body .swiper-slide .text:before{ content: ""; display: inline-block; clear: both; width: 0px; height: 100%; margin-left: -5px; vertical-align: middle; }
+.page-topic .page-body .cont-arrow{ position: absolute; bottom: 0px; left: 0px; width: 100%; height: 70px; padding: 0px 0px; text-align: center; }
+.page-topic .page-body .cont-arrow .arrow{ display: inline-block; width: 18px; height: 15px; background: url(../images/icon-arrow-double1.png) no-repeat center; background-size: 100% 100%; transform: rotate(-90deg); margin-top: 40px; }
+
+.page-topic .page-body .con-condition .moreSelect{ top: 2px; right: 18px; }
+
+/*专题详情页*/
+.page-topic-detail{ padding-top: 54px; }
+.page-topic-detail .page-header{ position: fixed; z-index: 4;}
+.page-topic-detail .page-body{ padding: 0px 18px; }
+.page-topic-detail .page-body .videobox{ height: 100%; overflow: hidden; position: relative; }
+.page-topic-detail .page-body .videobox:after{ content: ""; display: block; clear: both; width: 30px; height: 30px; background-image: url(../images/icon-play.png); background-position: right center; background-repeat: no-repeat; background-size: 100% 100%; position: absolute; left: 50%; top: 50%; margin: -15px 0 0 -15px; z-index: 1;}
+.page-topic-detail .page-body .videobox video{ width: 100%; height: 100%; object-fit: fill; display: block; }
+.page-topic-detail .page-body .videobox img{ width: 100%; display: block; }
+.page-topic-detail .article-img{ width: 100%; position: relative; padding: 20px 0; }
+.page-topic-detail .article-img li{ float: left; }
+.page-topic-detail .article-img .imgbox{ width: 100%; overflow-x: auto; }
+.page-topic-detail .article-img .item{ width: 1000000px; }
+.page-topic-detail .article-img .img{ display: block; height: 300px; float: left; margin-right: 18px; }
+.page-topic-detail .article-title{ font-family: AudiNormal,HeiW9; font-weight: bold; display: inline-block; padding: 5px 20px; background-color: #bb0a30; font-size: 17px; line-height: 20px; margin-bottom: 1em; }
+.page-topic-detail .article-cont{ font-size: 14px; line-height: 21px; font-family: AudiNormal,HeiW5; }
+.page-topic-detail .article-cont video{ display: block; width: 100%; }

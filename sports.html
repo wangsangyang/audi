@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html class="scroll">
+<head lang="en">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>奥迪中国新闻中心</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+</head>
+<body>
+
+<div class="page page-news">
+    <header class="page-header">
+        <img class="icon-menu" src="images/icon-nav.png" alt="菜单">
+        <img class="logo" src="images/logo.png" alt="奥迪logo">
+        <img class="icon-search" src="images/icon-search.png" alt="搜索">
+        <div class="searchbox">
+            <i class="iconclose"></i>
+            <div class="search-cont">
+                <span class="tips">开始搜索</span>
+                <dl class="list">
+                    <dt class="search-input"><input id="search" type="text" placeholder="请输入标题关键字"></dt>
+                    <dd class="search-btn"></dd>
+                </dl>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-body">
+        <div class="con-condition">
+            <dl class="dropSelect timeSelect">
+                <dt class="drop-btn"><span class="text">2017-09</span><i class="icon-down"></i></dt>
+                <dd class="drop-menu">
+                    <a class="menu" href="#">2017-11</a>
+                    <a class="menu" href="#">2017-10</a>
+                    <a class="menu" href="#">2017-09</a>
+                    <a class="menu" href="#">2017-08</a>
+                    <a class="menu" href="#">2017-07</a>
+                </dd>
+            </dl>
+
+        </div>
+
+        <ul class="cont">
+            <li>
+                <a href="news-detail.html">
+                    <dl>
+                        <dt><img src="images/ex-news1.png"></dt>
+                        <dd>
+                            <i class="iconzan"></i>
+                            <span>2017-09-20</span>
+                            <h3>玖娱乐公司成为奥迪R8 LMS杯官方合作伙伴</h3>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a href="news-detail.html">
+                    <dl>
+                        <dt><img src="images/ex-news2.png"></dt>
+                        <dd>
+                            <i class="iconzan active"></i>
+                            <span>2017-09-19</span>
+                            <h3>品味经典 创意未来 2017萨尔斯堡音乐节“奥迪之夜”圆满落幕</h3>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a href="news-detail.html">
+                    <dl>
+                        <dt><img src="images/ex-news3.png"></dt>
+                        <dd>
+                            <i class="iconzan"></i>
+                            <span>2017-09-10</span>
+                            <h3>品味经典 创意未来 2017萨尔斯堡音乐节“奥迪之夜”圆满落幕</h3>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- start 导航菜单 -->
+<div class="page page-nav">
+    <i class="shadow"></i>
+    <div class="cont-logo"><img src="images/logo.png"></div>
+    <div class="cont-nav">
+        <ul>
+            <li><a href="index.html"><span class="icon"><img src="images/icon-home.png"></span>首页</a></li>
+            <li><a href="news.html"><span class="icon"><img src="images/icon-news.png"></span>新闻</a></li>
+            <li><a href="topic.html"><span class="icon"><img src="images/icon-feature.png"></span>专题</a></li>
+            <li><a href="imagery.html"><span class="icon"><img src="images/icon-imagery.png"></span>影像</a></li>
+            <li><a href="sports.html"><span class="icon"><img src="images/icon-sports.png"></span>运动</a></li>
+            <li><a href="technology.html"><span class="icon"><img src="images/icon-technology.png"></span>科技</a></li>
+            <li><a href="history.html"><span class="icon"><img src="images/icon-history.png"></span>历史</a></li>
+            <li><a href="message.html"><span class="icon"><img src="images/icon-messages.png"></span>留言</a></li>
+        </ul>
+    </div>
+    <div class="cont-user clearfix">
+        <span class="icon"><img src="images/icon-user.png" alt="用户头像"></span>
+        <span class="username">胡超宇</span>
+    </div>
+</div>
+<!-- end 导航菜单 -->
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<script>
+    $(function(){
+        $('.iconzan').on('click',function(){
+            var isActive = $(this).hasClass('active');
+            if(!isActive){
+                $(this).addClass('active');
+            }else{
+                alert('你已经点过赞了！');
+            }
+        });
+    });
+</script>
+</body>
+</html>

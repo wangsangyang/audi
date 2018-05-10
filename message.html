@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html class="scroll">
+<head lang="en">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>奥迪中国新闻中心</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+</head>
+<body>
+
+<div class="page page-message">
+    <header class="page-header">
+        <img class="icon-menu" src="images/icon-nav.png" alt="菜单">
+        <img class="logo" src="images/logo.png" alt="奥迪logo">
+        <dl class="dropSelect">
+            <dt class="drop-btn"><span class="text">留言板</span><i class="icon-down"></i></dt>
+            <dd class="drop-menu">
+                <a class="menu" href="#">留言板1</a>
+                <a class="menu" href="#">留言板2</a>
+                <a class="menu" href="#">留言板3</a>
+            </dd>
+        </dl>
+    </header>
+
+    <div class="page-body">
+        <ul class="cont" style="padding-top: 4%;">
+            <li>
+                <h3>请选择您希望获取回复的方式</h3>
+                <dl class="drop">
+                    <dt class="drop-btn">
+                        <input type="text" class="input placehoder" placeholder="电子邮件/电话/企业微信">
+                        <div class="mst">
+                            <select class="myselect" placeholder="电子邮件/电话/企业微信">
+                                <option value='' disabled selected style='display:none;'></option>
+                                <option>电子邮件</option>
+                                <option>电话</option>
+                                <option>企业微信</option>
+                            </select>
+                        </div>
+                    </dt>
+                </dl>
+            </li>
+            <li>
+                <h3>您在下方输入您的留言内容</h3>
+                <dl class="drop">
+                    <dt class="drop-btn">
+                        <!--<input class="input" type="text">-->
+                        <textarea class="input" placeholder="请输入您的留言" id="tValue" style="overflow-y:hidden; height:20px;" onpropertychange="this.style.height=this.scrollHeight + 'px'" oninput="this.style.height=this.scrollHeight + 'px'"></textarea>
+                    </dt>
+                </dl>
+            </li>
+        </ul>
+        <div class="btns"><a class="btn" id="submitBtn" href="#">确认提交</a></div>
+    </div>
+
+</div>
+
+<!-- start 导航菜单 -->
+<div class="page page-nav">
+    <i class="shadow"></i>
+    <div class="cont-logo"><img src="images/logo.png"></div>
+    <div class="cont-nav">
+        <ul>
+            <li><a href="index.html"><span class="icon"><img src="images/icon-home.png"></span>首页</a></li>
+            <li><a href="brand.html"><span class="icon"><img src="images/icon-brand.png"></span>品牌</a></li>
+            <li><a href="news.html"><span class="icon"><img src="images/icon-news.png"></span>新闻</a></li>
+            <li><a href="imagery.html"><span class="icon"><img src="images/icon-imagery.png"></span>影像</a></li>
+            <li><a href="live.html"><span class="icon"><img src="images/icon-feature.png"></span>专题</a></li>
+            <li><a href="fillInfo.html"><span class="icon"><img src="images/icon-event.png"></span>活动</a></li>
+            <li><a href="message.html"><span class="icon"><img src="images/icon-messages.png"></span>留言</a></li>
+        </ul>
+    </div>
+    <div class="cont-user clearfix">
+        <span class="icon"><img src="images/icon-user.png" alt="用户头像"></span>
+        <span class="username">Enson Hu</span>
+    </div>
+</div>
+<!-- end 导航菜单 -->
+
+<div class="myModal" id="sureSubmitModal">
+    <i class="shadow"></i>
+    <div class="mycontainer">
+        <i class="close"></i>
+        <div class="bodyer">
+            <h3>您的信息已提交</h3>
+            <span>非常感谢您的留言！</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<script type="text/javascript" src="js/preventOverscroll.js"></script>
+<script>
+    $(function(){
+        $('#submitBtn').on('click',function(){
+            $('#sureSubmitModal').addClass('show');
+        });
+
+        $('.myselect').change(function(){
+            var value = $(this).val();
+            $('.placehoder').val(value);
+        });
+    });
+</script>
+</body>
+</html>

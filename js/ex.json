@@ -1,0 +1,34 @@
+[
+    {
+        "imgurl":"images/ex1.png",
+        "title":"1",
+        "type":"img"
+    },
+    {
+        "imgurl":"images/ex4.png",
+        "videourl":"images/video1.mov",
+        "title":"2",
+        "type":"video"
+    },
+    {
+        "imgurl":"images/ex3.png",
+        "title":"3",
+        "type":"img"
+    },
+    {
+        "imgurl":"images/ex4.png",
+        "title":"4",
+        "type":"img"
+    },
+    {
+        "imgurl":"images/ex5.png",
+        "videourl":"images/video1.mov",
+        "title":"5",
+        "type":"video"
+    },
+    {
+        "imgurl":"images/ex6.png",
+        "title":"6",
+        "type":"img"
+    }
+]

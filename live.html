@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html class="scroll">
+<head lang="en">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no">
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>奥迪中国新闻中心</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+</head>
+<body>
+
+<div class="page page-live">
+    <header class="page-header">
+        <img class="icon-menu" src="images/icon-nav.png" alt="菜单">
+        <img class="logo" src="images/logo.png" alt="奥迪logo">
+        <img class="icon-search" src="images/icon-search.png" alt="搜索">
+        <div class="searchbox">
+            <i class="iconclose"></i>
+            <div class="search-cont">
+                <span class="tips">开始搜索</span>
+                <dl class="list">
+                    <dt class="search-input"><input id="search" type="text" placeholder="请输入视频标题"></dt>
+                    <dd class="search-btn"></dd>
+                </dl>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-body">
+        <div class="cont-live">
+            <h3 class="c-title">正在直播</h3>
+            <ul class="clearfix">
+                <li>
+                    <a>
+                        <div class="videobox">
+                            <video id="video" src="" autoplay preload="auto" poster="images/ex26.png">您的浏览器不支持视频播放</video>
+                            <!--<iframe src="http://123.206.191.155:8080/live/video.m3u8" frameborder="0" style="width: 100%; height: 100%;"></iframe>-->
+                            <i class="iconplay"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="tips">请在wifi环境下观看</div>
+        </div>
+
+        <div class="cont-video">
+            <h3 class="c-title">视频回看</h3>
+            <ul class="clearfix">
+                <li>
+                    <a>
+                        <dl>
+                            <dt class="videobox"><video src="images/video1.mov" preload="auto" poster="images/banner6.png">您的浏览器不支持视频播放</video><i class="iconplay"></i></dt>
+                            <dd>Audi A7 Sportback介绍</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <dl>
+                            <dt class="videobox"><video src="images/video1.mov" preload="auto" poster="images/ex8.png">您的浏览器不支持视频播放</video><i class="iconplay"></i></dt>
+                            <dd>Audi A7 设计理念</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <dl>
+                            <dt class="videobox"><video src="images/video1.mov" preload="auto" poster="images/banner6.png">您的浏览器不支持视频播放</video><i class="iconplay"></i></dt>
+                            <dd>e-Tron 国内首秀集锦</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <dl>
+                            <dt class="videobox"><img src="images/ex8.png"><video src="images/video1.mov" preload="auto" poster="images/ex8.png">您的浏览器不支持视频播放</video><i class="iconplay"></i></dt>
+                            <dd>A3 Sportback</dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-- start 导航菜单 -->
+<div class="page page-nav">
+    <i class="shadow"></i>
+    <div class="cont-logo"><img src="images/logo.png"></div>
+    <div class="cont-nav">
+        <ul>
+            <li><a href="index.html"><span class="icon"><img src="images/icon-home.png"></span>首页</a></li>
+            <li><a href="brand.html"><span class="icon"><img src="images/icon-brand.png"></span>品牌</a></li>
+            <li><a href="news.html"><span class="icon"><img src="images/icon-news.png"></span>新闻</a></li>
+            <li><a href="imagery.html"><span class="icon"><img src="images/icon-imagery.png"></span>影像</a></li>
+            <li><a href="live.html"><span class="icon"><img src="images/icon-feature.png"></span>专题</a></li>
+            <li><a href="fillInfo.html"><span class="icon"><img src="images/icon-event.png"></span>活动</a></li>
+            <li><a href="message.html"><span class="icon"><img src="images/icon-messages.png"></span>留言</a></li>
+        </ul>
+    </div>
+    <div class="cont-user clearfix">
+        <span class="icon"><img src="images/icon-user.png" alt="用户头像"></span>
+        <span class="username">Enson Hu</span>
+    </div>
+</div>
+<!-- end 导航菜单 -->
+
+<iframe allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" width="100%" src="https://www.audimedia.tv/en/embedded-player?id=amtve-v-3069-en" scrolling="no" id="amtv-iframe-amtve-v-3069-en" class="amtv-iframe" style="max-width: 100%; border: none; overflow: hidden; display: block; min-height: 1px;"></iframe>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<script>
+    $(function(){
+        setTimeout(function(){
+            //alert( $('iframe').contents().find('.info-area').length);
+            console.log( $(document.getElementById('amtv-iframe-amtve-v-3069-en').contentWindow.document.body).html() );
+
+            //alert( $('#amtv-iframe-amtve-v-3069-en').contents().find('.info-area').length);
+            $('.info-area .meta,.info-area .info-area--title,.info-area .info-area--description,.info-area .info-area--facts,.info-area .visible-mobile').hide()
+        },2000);
+
+        $('.videobox').on('click',function(){
+            var $this = $(this);
+            var myvideo = $this.find('video')[0];
+            if( !$this.hasClass('playing') ){
+                $this.addClass('playing');
+                myvideo.play();
+            }else{
+                $this.removeClass('playing');
+                myvideo.pause();
+            }
+        });
+    });
+</script>
+</body>
+</html>
