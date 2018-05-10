@@ -157,7 +157,9 @@
             $(this).find('dt').removeClass('active');
         });
         */
+    });
 
+    window.onload = function () {
         var window_height = $(window).height();
         var doc_height = $(document).height();
         $(window).scroll(function () {
@@ -168,7 +170,7 @@
                 $('.icon-arrow-down-character').removeClass('up');
             }
         });
-    });
+    }
 </script>
 </body>
 </html>
