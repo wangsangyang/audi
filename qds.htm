@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>权大师js库</title>
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+
+    var obj = {
+        get:function(){
+            return this.value;
+        },
+        set:function(value){
+            this.value = value;
+        }
+    };
+
+    obj.set(2);
+    console.log(obj.get());
+
+    obj.set(3);
+    console.log(obj.get());
+
+    var obj1 = {
+        value:5,
+        get:function(){
+            return this.value;
+        },
+        set:function(value){
+            this.value = value;
+        }
+    };
+    obj1.value=6;
+    console.log(obj1.get());
+
+
+    ;(function(window){
+        var qds = function(a){
+            this.a =a;
+            return new qds.prototype.init();
+        }
+        qds.prototype = {
+            version: 'v0.1',
+            createtime:'2017-06-30',
+            init:function(){
+                return this;
+            },
+            sortArray: function (arr) {
+                var temp;
+                for (var i = 0; i < arr.length; i++) {
+                    for (var j = 0; j < arr.length; j++) {
+                        if (arr[j] > arr[i]) {
+                            temp = arr[j];
+                            arr[j] = arr[i];
+                            arr[i] = temp;
+                        }
+                    }
+                }
+                return arr;
+            },
+            deleteRepeat: function (arr) {
+                var n = [];
+                for (var i = 0; i < arr.length; i++) {
+                    if( n.indexOf(arr[i])===-1 ){
+                        n.push(arr[i]);
+                    }
+                }
+                return n;
+            }
+        };
+        qds.prototype.init.prototype = qds.prototype;
+        window.qds = QDS = qds;
+    })(window);
+
+    var arr = [8, 2, 5, 30, 45, 30, 35, 30];
+    console.log(qds());
+    console.log(qds().sortArray(arr));
+
+</script>
+
+</body>
+</html>
