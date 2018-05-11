@@ -527,7 +527,7 @@ html,body{ font-family: AudiNormal,HeiW9; }
 /*  积分页面1 */
 #personal_content{ top: 54px; bottom: 0; width: 100%; height: 100%; overflow-y: auto; }
 .page-cart{ height: 100%; }
-#cart_content{ top: 54px; bottom: 68px; height: 100%; overflow-y: auto; }
+#cart_content{top: 54px;bottom: 0;height: auto;overflow-y: auto;position: relative;padding-bottom: 68px; }
 #cart_content .cart_item:first-child{ margin-top: 0; }
 
 .trans-value{ position: relative; text-align: center; margin-top: 30px; }
@@ -551,7 +551,7 @@ html #details_content{ position: fixed; top: 60px; bottom: 70px; width: 100%; he
 .page-header.fixed{ position: fixed; }
 
 
-#cart_content{ overflow: hidden; }
+/*#cart_content{ overflow: hidden; }*/
 html .cart_delete{ display: block; height: 100%; width: 100px; position: absolute; right: -100px; top: 0; float: none; }
 html .cart_delete .btn-delete{ display: block; height: 100%; background-color: #ff0000; color: #fff; line-height: 100pt; text-align: center; }
 
