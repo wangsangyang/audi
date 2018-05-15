@@ -28,6 +28,7 @@
     </header>
 
     <div id="cart_content">
+    <div style="width: 100%; overflow-x: hidden;">
         <!--一条记录-->
         <div class="cart_item">
             <div class="cart_item_left">
@@ -321,7 +322,6 @@
             </div>
         </div>
         <!--=========================================================================================-->
-
         <!--底图 跟着最后一个商品-->
 <!--        <div id="cart_back2">
             <img />
@@ -336,7 +336,7 @@
         </div>-->
 
     </div>
-
+    </div>
 
     <!--按钮-->
     <div id="cart_sub">
@@ -452,8 +452,11 @@
     </div>
 </div>
 
+
+<script type="text/javascript" src="../js/hammer.min.js"></script>
+
 <script>
-    $(function () {
+/*    $(function () {
         var moveX = 0;
         var touchXArray = [];
         var touchYArray = [];
@@ -493,7 +496,40 @@
             }
         }
 
+    });*/
+
+$(function () {
+    $('.cart_item').each(function () {
+        var that = this;
+        var myHammer = new Hammer(that);
+        //myHammer.add(new Hammer.Pan());
+        var startleft = 0;
+        myHammer.on("panstart", function (e) {
+            startleft = parseFloat($(that).css('left').replace(/px/,''));
+            console.log(startleft);
+        });
+        myHammer.on("panleft", function (e) {
+            //console.log(e);
+            //console.log(startleft);
+            $(that).css('left',e.deltaX + startleft);
+        });
+        myHammer.on("panend", function (e) {
+            //console.log(e);
+            var left = $(that).css('left').replace(/px/,'');
+            //console.log(left);
+            if(-left>100){
+                $(that).animate({'left':-100});
+            }else{
+                $(that).animate({'left':0});
+            }
+        });
+        myHammer.on("panright", function (e) {
+            $(that).css('left',e.deltaX + startleft);
+        });
     });
+});
+
+
 
     $(function () {
         $('.cart_delete').on('click',function (event) {
